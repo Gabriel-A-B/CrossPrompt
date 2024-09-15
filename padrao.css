@@ -31,14 +31,15 @@
 	background-size: cover;
 }
 
-.active {
-	background-color: azure;
-    border: 1px aqua solid;
-    color: black;
-}
-
 .hidden {
 	display: none;
+}
+
+@media screen and (max-width: 1000px) {
+	[data-contexto="Projects"] {
+		background: fixed url(assets/background-project_mobile.png) center center no-repeat;
+		background-size: cover;
+	}
 }
 
 html, body, div, span, applet, object, iframe,

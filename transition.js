@@ -1,3 +1,6 @@
+/*tarefas*/
+/*arrumar os button icons do msm geito dos buttons normais, para marcar qual botao foi clicado*/
+
 /*corpo*/
 const html = document.querySelector("html");
 
