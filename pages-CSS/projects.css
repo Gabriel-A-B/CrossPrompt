@@ -1,0 +1,101 @@
+@charset "UTF-08";
+
+@font-face {
+    font-family: Orbitron;
+    src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+/*extrutura basica da page*/
+.Projects {
+    height: 1300px;
+    margin: 78px 0px;
+    background: local url(../assets/background\ projects.png) center center no-repeat;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    padding: 17px 21px;
+}
+
+.projects-arquive {
+    width: 60%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: auto;
+}
+
+/*extrutura da API*/
+
+.projects-arquive .swiper-pagination {
+    position: initial;
+}
+
+.swiper {
+    border: 1px transparent;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*extrutras da page*/
+.projects-titulo {
+    font-family: "Orbitron", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+    padding: 300px 0px 57px 0px;
+}
+
+.swiper-descricao {
+    position: absolute;
+    top: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 140px;
+    margin: auto;
+    background-color: white;
+}
+
+.descricao-conteudo {
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+/*extrutura dos itens da API*/
+.swiper-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.cabecalho-img {
+    width: 48px;
+
+}.cabecalho-titulo {
+    font-family: "Orbitron", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.swiper-img {
+    width: 260px;
+    padding: 0.5em 0em;
+}
+
+.swiper-descricao {
+    background: fixed url(../assets/descrição_bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}

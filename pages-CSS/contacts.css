@@ -1,0 +1,49 @@
+@charset "UTF-08";
+
+/*extrutura*/
+.Contacts {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0em;
+}
+
+/*objetos*/
+.contacts-mobile {
+    width: 600px;
+    height: 627px;
+    background: local url(../assets/frame-iphone\ 1.png) center center no-repeat;
+    background-size: contain;
+}
+
+.mobile-tela {
+    position: absolute;
+    top: 14.5em;
+    left: 21em;
+    
+    width: 269px;
+    height: 475px;
+    border-radius: 5px;
+}
+
+.contacts-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.redes__page-img {
+    width: 64px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px white solid;
+}
+
+.redes__page-img:hover {
+    transition: 0.5s;
+    border: 2px rgba(0, 255, 255, 0.884) solid;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.884);
+}
+
+img {
+    width: 100%;
+}

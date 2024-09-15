@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto="Home"> <!--parece q esse e a chave que faltava no codigo-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortifolioCrossPrompt</title>
+    <link rel="stylesheet" href="padrao.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<!--cabeçalho, vou recomeçar esse sistema-->
+    <header class="cabecalho">
+
+        <!--Logo-->
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="LogoDoSite" class="logo-container-img">
+            <h1 class="logo-container-nome">CrossPrompt</h1>
+        </div>
+
+        <!--Navegação-->
+        <div class="navegation-container" id="buttom-list">
+            <button data-contexto="About" class="nav-buttom-About buttom" id="buttom-about" value="About">
+            About</button>
+
+            <button data-contexto="Projects" class="nav-buttom-Project buttom active" id="buttom-projects" value="Projects">
+            Projects</button>
+
+            <button data-contexto="Contacts" class="nav-buttom-Contacts buttom" id="buttom-contacts" value="Contacts">
+            Contacts</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="Home pages " id="pageHome">
+            <div class="home-conteudo"></div>
+        </div>
+
+        <div class="About pages hidden" id="pageAbout">
+            <div class="curriculo">
+                <img src="assets/Ellipse 1.png" alt="foto de perfil" class="curriculo-perfil">
+                <h2 class="curriculo-area">FULL-STACK</h2>
+                <img src="assets/detalhe.png" class="curriculo-img">
+                <h3 class="curriculo-nome">Gabriel Andrade Branger</h3>
+                <p class="curriculo-sobre">
+                    Olá! Meu nome é Gabriel Andrade Branger, tenho 21 anos e sou um 
+                    entusiasta apaixonado por tecnologia. Minhas principais 
+                    áreas de interesse são o desenvolvimento web e a 
+                    cibersegurança. Sempre busco me atualizar com as últimas 
+                    tendências e inovações do setor, e adoro enfrentar novos 
+                    desafios que me permitam crescer e aprimorar minhas 
+                    habilidades. Estou constantemente explorando novas 
+                    ferramentas e técnicas para criar soluções eficientes e 
+                    seguras. Vamos juntos transformar o futuro digital!
+                </p>
+
+                <div class="redes">
+                    <a href="https://github.com/Gabriel-A-B" class="redes-item"><img src="assets/GitHub_01 1.png" alt="icone do github" class="redes-item-img img-github"></a>
+                    <a href="www.linkedin.com/in/gabriel-andrade-branger-690a34230" class="redes-item"><img src="assets/Linkedin_01 1.png" alt="icone do linkedin" class="redes-item-img img-linkedin"></a>
+                    <a href="https://www.instagram.com/techn0_trailblazer?igsh=MW1qMzlibW8xNzJvNw==" class="redes-item"><img src="assets/Instagram_01 1.png" alt="icone do insta" class="redes-item-img img-instagram"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Projects pages hidden" id="pageProject">
+            <h1 class="projects-titulo">Projects</h1>
+            <!--swiper extrutura-->
+            <div class="projects-arquive">
+
+                <!-- Slider main container -->
+                <div class="swiper">
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                <!-- Slides -->
+                
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/html-5.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">Alura+</h2>
+                    </div>
+                    <div class="project-img">
+                        <img src="assets/projetos/projeto-HTML-Alura+.png" alt="" class="swiper-img">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/html-5.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">AluraBooks</h2>
+                    </div>
+                    <img src="assets/projetos/projeto-HTML-AluraBooks.png" alt="" class="swiper-img">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/html-5.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">AluraPortifolio</h2>
+                    </div>
+                    <img src="assets/projetos/projeto-HTML-portifolio.png" alt="" class="swiper-img">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/tecnologia.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">AluraBooksJS</h2>
+                    </div>
+                    <img src="assets/projetos/projeto-JS-AluraBooks.png" alt="" class="swiper-img">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/tecnologia.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">Fokus</h2>
+                    </div>
+                    <img src="assets/projetos/projeto-JS-Fokus.png" alt="" class="swiper-img">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/tecnologia.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">GameNumero</h2>
+                    </div>
+                    <img src="assets/projetos/projeto-JS-GameNumero.png" alt="" class="swiper-img">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/tecnologia.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">MoneyBank</h2>
+                    </div>
+                    <img src="assets/projetos/projeto-JS-MoneyBank.png" alt="" class="swiper-img">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/tecnologia.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">NumeroSecreto</h2>
+                    </div>
+                    <img src="assets/projetos/projeto-JS-NumeroSecreto.png" alt="" class="swiper-img">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-cabecalho">
+                        <img src="assets/tecnologia.png" alt="" class="cabecalho-img">
+                        <h2 class="cabecalho-titulo">Piano</h2>
+                    </div>
+                    <img src="assets/projetos/projeto-JS-Piano.png" alt="" class="swiper-img">
+                </div>
+
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <!--fim da ferramenta-->
+            <!--aqui e a descrição do sites-->
+        <div class="swiper-descricao hidden">
+            <img src="assets/descricao-BackGround.png" alt="" class="descricao-background">
+            <p class="descricao-conteudo"></p>
+            <a href="">Acessar</a>
+        </div>
+        </div>
+
+        <div class="Contacts pages hidden" id="pageContact">
+            <section class="contacts-mobile">
+                <iframe src="mobile/home.html" frameborder="0" id="tela" name="tela" class="mobile-tela"></iframe>
+            </section>
+
+            <section class="contacts-redes">
+                <a href="mobile/home.html" target="tela" class="redes__page"><img src="assets/botao-home (2).png" alt="home.png" class="redes__page-img"></a>
+                <a href="mobile/instagram.html" target="tela" class="redes__page"><img src="assets/logo-instagram 1.png" alt="instagram.png" class="redes__page-img"></a>
+                <a href="mobile/github.html" target="tela" class="redes__page"><img src="assets/logo-github 1.png" alt="github.png" class="redes__page-img"></a>
+                <a href="mobile/linkedin.html" target="tela" class="redes__page"><img src="assets/linkedin (2).png" alt="linkedin.png" class="redes__page-img"></a>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-logo">
+            <img src="assets/logo.png" alt="LogoDoSite" class="rodape-container__img">
+            <h1 class="rodape-container__nome">techn0_trailblazer</h1>
+        </div>
+
+        <div class="rodape-contatos">
+            <div class="contatos-telefone">
+                <img src="assets/botao-de-simbolo-de-telefone 1.png" alt="telefone.png" class="rodape__img">
+                <h2 class="rodape__info">+55 (47) 99959-6251</h2>
+            </div>
+
+            <div class="contatos-email">
+                <img src="assets/enviar 1.png" alt="email.png" class="rodape__img">
+                <h2 class="rodape__info">gabriel.anndrade223@gmail.com</h2>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="transition.js"></script>
+<script src="project.js"></script>
+
+<!--swiper logica-->
+
+<script 
+src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">  
+</script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    a11y: {
+    prevSlideMessage: 'Previous slide',
+    nextSlideMessage: 'Next slide',
+  },
+
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  
+}); 
+</script>
+
+</html>

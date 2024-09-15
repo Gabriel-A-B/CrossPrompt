@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/*extrutra base*/
+.About {
+    margin: 78px 0px;
+    background: fixed url(../assets/Rectangle\ 4.png) center center no-repeat;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    padding: 17px 21px;
+}
+
+.curriculo {
+    width: 50%;
+    margin: auto;
+    border: 16px #2F3E46 solid;
+    padding: 0px 40px;
+}
+
+.redes {
+    display: flex;
+    background-color: #2F3E46;
+    justify-content: center;
+    padding: 46px 92px;
+    border-radius: 15px 15px 0px 0px;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+/*extrutura dos objetos*/
+.curriculo-area {
+    padding: 27px 0px 11px 0px;
+    font-size: 2.62rem;
+}
+
+.curriculo-nome {
+    padding: 11px 0px 62px 0px;
+    font-size: 2.62rem;
+    color:#2F3E46;
+}
+
+.curriculo-sobre {
+    text-align: left;
+    font-size: 1.5rem;
+    padding-bottom: 93px;
+}
+
+/*extrutura das imagens*/
+.curriculo-img {
+    width: 80%;
+}
+
+.curriculo-perfil {
+    width: 200px;
+    background-color: #2F3E46;
+    padding: 17px 84px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.redes-item-img {
+    width: 64px;
+    border: 5px black solid;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+img {
+    width: 100%;
+}
