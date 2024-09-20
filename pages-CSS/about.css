@@ -3,70 +3,155 @@
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+
 /*extrutra base*/
 .About {
-    margin: 78px 0px;
-    background: fixed url(../assets/Rectangle\ 4.png) center center no-repeat;
-    text-align: center;
-    box-sizing: border-box;
-    display: block;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    padding: 17px 21px;
+    background-color: white;
+    background-size: contain;
+    width: 70%;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0px;
 }
 
 .curriculo {
-    width: 50%;
+    width: 90%;
+    border: 12px #2F3E46 solid;
+    padding: 0px 15px;
     margin: auto;
-    border: 16px #2F3E46 solid;
-    padding: 0px 40px;
+    text-align: center;
+
 }
 
 .redes {
+    margin: auto;
+    width: 80%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-color: #2F3E46;
-    justify-content: center;
-    padding: 46px 92px;
     border-radius: 15px 15px 0px 0px;
-    justify-content: space-around;
-    width: 50%;
+    padding: 3em 0px 3em 0px;
+}
+
+/*objetos*/
+.curriculo-perfil {
+    width: 200px;
+    align-items: center;
+    background: #2F3E46;
+    padding: 0px 84px 17px 84px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.curriculo-area {
+    font-size: 2.6rem;
+    padding: 22px 0px 17px 0px;
+}
+
+.curriculo-img {
     margin: auto;
 }
 
-/*extrutura dos objetos*/
-.curriculo-area {
-    padding: 27px 0px 11px 0px;
-    font-size: 2.62rem;
-}
-
 .curriculo-nome {
-    padding: 11px 0px 62px 0px;
-    font-size: 2.62rem;
-    color:#2F3E46;
+    color: #2F3E46;
+    font-size: 2.6rem;
+    -webkit-text-stroke: 2px #52796F solid;
+    padding: 11px 0px 70px 0px;
 }
 
 .curriculo-sobre {
     text-align: left;
-    font-size: 1.5rem;
-    padding-bottom: 93px;
-}
-
-/*extrutura das imagens*/
-.curriculo-img {
+    font-size: 1.8rem;
     width: 80%;
+    margin: auto;
+    padding-bottom: 8em;
 }
 
-.curriculo-perfil {
-    width: 200px;
-    background-color: #2F3E46;
-    padding: 17px 84px;
-    border-radius: 0px 0px 15px 15px;
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    /*extrutra base*/
+    .About {
+        width: 600px;
+        padding: 10px 0px;
+    }
+
+    .curriculo {
+        width: 85%;
+    }
+
+    .redes {
+        padding: 2em 0px 2em 0px;
+    }
+
+    /*objetos*/
+    .curriculo-perfil {
+        width: 124px;
+        padding: 0px 42px 17px 42px;
+    }
+
+    .curriculo-area {
+        font-size: 2rem;
+        padding: 20px 0px 12px 0px;
+    }
+
+    .curriculo-nome {
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 22px 0px 40px 0px;
+    }
+
+    .curriculo-sobre {
+        width: 90%;
+    }
+
+    .redes-item-img {
+        width: 64px;
+    }
 }
 
-.redes-item-img {
-    width: 64px;
-    border: 5px black solid;
-    border-radius: 50%;
-    padding: 0px;
+@media screen and (min-width: 320px) and (max-width: 600px){
+    
+    /*extrutra base*/
+    .About {
+        width: 300px;
+        padding: 10px 0px;
+    }
+
+    .curriculo {
+        width: 80%;
+        border: 10px #2F3E46 solid;
+    }
+
+    .redes {
+        padding: 1em 0px 1em 0px;
+    }
+    
+    /*objetos*/
+    .curriculo-perfil {
+        width: 64px;
+        padding: 0px 42px 17px 42px;
+    }
+
+    .curriculo-area {
+        font-size: 1rem;
+        padding: 10px 0px 6px 0px;
+    }
+
+    .curriculo-nome {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 11px 0px 20px 0px;
+    }
+
+    .curriculo-sobre {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .redes-item-img {
+        width: 32px;
+    }
 }
 
 img {

@@ -8,9 +8,12 @@
 /*estrutura do header*/
 .cabecalho {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
+    padding: 0px;
     z-index: 1;
 }
 
@@ -23,6 +26,8 @@
 
 .navegation-container {
     display: flex;
+    gap: 3em;
+    padding: 0px 10px;
     border-bottom: 1px white solid;
 }
 
@@ -45,7 +50,6 @@
 .buttom {
     background: none;
     border: 0px;
-    padding: 0px 50px;
     color: white;
     font-size: 1.4rem;
     font-weight: 100;
@@ -56,16 +60,15 @@
 }
 
 .buttom:hover {
-    transition: 1s;
-    background-color: azure;
-    border: 1px aqua solid;
-    color: black;
+    transition: 0.2s;
+    transform: translateY(-10px);
+    color: aquamarine;
+    text-shadow: 0px 0px 50px aqua;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
     .logo-container-img {
         width: 80px;
-        padding-bottom: 10px;
     }
 
     .logo-container-nome {
@@ -73,45 +76,19 @@
         font-weight: 600;
     }
 
-    .buttom-text {
-        display: none;
-    }
-
-    .buttom-img {
-        display: flex;
-        justify-content: space-between;
-        gap: 5em;
-    }
-
-    .buttom {
-        background: none;
-        padding: 0px;
-    }
-
-    .buttom:hover {
-        transition: 1s;
-        margin-top: 15px;
-        height: fit-content;
-        width: fit-content;
-        border: 2px rgba(0, 255, 255, 0.884) solid;
-        box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.884);
-        border-radius: 50%;
-    }
-
-    .activated {
-        height: fit-content;
-        width: fit-content;
-        margin-top: 15px;
-        border: 2px rgba(0, 255, 255, 0.884) solid;
-        box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.884);
-        border-radius: 50%;
-        background-color: white;
-    }
+    .logo-container-nome {
+        font-size: 2rem;
+        font-weight: 600;
+    }    
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .cabecalho {
+        padding-top: 0.5em;
+    }
+    
     .logo-container-img {
-        width: 64px;
+        width: 32px;
         padding-bottom: 10px;
     }
 
@@ -127,33 +104,28 @@
     .buttom-img {
         display: flex;
         justify-content: space-between;
-        gap: 2em;
+        gap: 1em;
     }
 
     .buttom {
         background: none;
         padding: 0px;
-        width: 40px;
+        width: 24px;
     }
 
     .buttom:hover {
         transition: 1s;
-        margin-top: 15px;
-        height: fit-content;
-        width: fit-content;
-        border: 2px rgba(0, 255, 255, 0.884) solid;
-        box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.884);
+        
+        box-shadow: 0px 0px 10px aqua;
+        transform: translateY(-0px);
         border-radius: 50%;
+        height: fit-content;
     }
 
     .activated {
-        height: fit-content;
-        width: fit-content;
-        margin-top: 15px;
-        border: 2px rgba(0, 255, 255, 0.884) solid;
-        box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.884);
         border-radius: 50%;
-        background-color: white;
+        background: rgb(56, 56, 56);
+        height: fit-content;
     }
 }
 

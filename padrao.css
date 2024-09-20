@@ -69,6 +69,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	height: fit-content;
 }
 ol, ul {
 	list-style: none;
