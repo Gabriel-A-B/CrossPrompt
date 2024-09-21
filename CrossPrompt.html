@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-contexto="About"> <!--parece q esse e a chave que faltava no codigo-->
+<html lang="pt-br" data-contexto="Projects"> <!--parece q esse e a chave que faltava no codigo-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="padrao.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -48,7 +49,7 @@
             <div class="home-conteudo"></div>
         </div>
 
-        <div class="About pages " id="pageAbout">
+        <div class="About pages hidden" id="pageAbout">
             <div class="curriculo">
                 <img src="assets/Ellipse 1.png" alt="foto de perfil" class="curriculo-perfil">
                 <h2 class="curriculo-area">FULL-STACK</h2>
@@ -74,8 +75,9 @@
             </div>
         </div>
 
-        <div class="Projects pages hidden" id="pageProject">
+        <div class="Projects pages " id="pageProject">
             <h1 class="projects-titulo">Projects</h1>
+           
             <!--swiper extrutura-->
             <div class="projects-arquive">
 
@@ -179,7 +181,7 @@
         <div class="swiper-descricao hidden">
             <img src="assets/descricao-BackGround.png" alt="" class="descricao-background">
             <p class="descricao-conteudo"></p>
-            <a href="">Acessar</a>
+            <a href="" class="descricao-link">Acessar</a>
         </div>
         </div>
 
@@ -219,34 +221,53 @@
 
 </body>
 
-<script src="transition.js"></script>
-<script src="project.js"></script>
+<div class="codigo">
+    <script src="transition.js"></script>
+    <script src="project.js"></script>
 
-<!--swiper logica-->
+    <!--swiper logica-->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">  
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        a11y: {
+        prevSlideMessage: 'Previous slide',
+        nextSlideMessage: 'Next slide',
+    },
 
-<script 
-src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">  
-</script>
-<script>
-    const swiper = new Swiper('.swiper', {
-    a11y: {
-    prevSlideMessage: 'Previous slide',
-    nextSlideMessage: 'Next slide',
-  },
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
 
-  spaceBetween: 10,
-  slidesPerView: 3,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  
-}); 
-</script>
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    
+    }); 
+    </script>
+    <script>
+        swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        });
+    </script>
+</div>
 
 </html>

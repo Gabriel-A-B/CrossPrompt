@@ -1,170 +1,63 @@
 @charset "UTF-08";
 
+@import url(API/swiper.css);
+
 @font-face {
     font-family: Orbitron;
     src: url(../fonts/Orbitron-VariableFont_wght.ttf);
 }
 
 /*extrutura basica da page*/
-.Projects {
-    height: 1300px;
-    margin: 78px 0px;
-    background: local url(../assets/background\ projects.png) center center no-repeat;
-    text-align: center;
-    box-sizing: border-box;
-    display: block;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    padding: 17px 21px;
-}
-
 .projects-arquive {
-    width: 60%;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: auto;
-}
-
-/*extrutura da API*/
-
-.projects-arquive .swiper-pagination {
-    position: initial;
-}
-
-.swiper {
-    border: 1px transparent;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-.swiper-wrapper {
+    width: 100%;
+    font-family: "Orbitron", Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.5em 0px;
+    margin: auto;
+    text-align: center;
 }
 
-/*extrutras da page*/
+/*obejetos*/
 .projects-titulo {
     font-family: "Orbitron", Arial, Helvetica, sans-serif;
-    text-align: center;
     font-size: 4rem;
-    color: black;
     font-weight: bold;
-    padding: 300px 0px 57px 0px;
+    text-align: center;
+    margin: 1em auto;
 }
 
-.swiper-descricao {
-    position: absolute;
-    top: 1000px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 800px;
-    height: 140px;
-    margin: auto;
-    background-color: white;
+.cabecalho-img{
+    width: 24px;
+}
+
+.descricao-background {
+    position: sticky;
+    bottom: 100%;
 }
 
 .descricao-conteudo {
-    width: 80%;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
+    font-size: 0.8rem;
 }
 
-/*extrutura dos itens da API*/
-.swiper-cabecalho {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+.descricao-link {
+    color: blue;
+    font-size: 0.8rem;
 }
 
-.cabecalho-img {
-    width: 48px;
-}
-
-.cabecalho-titulo {
-    font-family: "Orbitron", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color: black;
-    font-weight: bold;
-}
-
-.swiper-img {
-    width: 260px;
-    padding: 0.5em 0em;
-}
-
-.swiper-descricao {
-    background: fixed url(../assets/descrição_bg.png) center center no-repeat;
-    background-size: cover;
-}
-
-@media screen and (max-width: 1100px) {
-    .projects-arquive {
-        width: 75%;
-        justify-content: space-between;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    /*extrutura basica da page*/
-    .Projects {
-        height: 600px;
-        margin: auto;
-        background: none;
-        padding: 17px 21px;
-    }
-
-    .projects-arquive {
-        width: 90%;
-    }
-
-    /*extrutras da page*/
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    /*obejetos*/
     .projects-titulo {
-        padding: 50px 0px 25px 0px;
+        font-size: 2rem;
     }
 
-    .swiper-descricao {
-        top: 500px;
-        transform: translateX(-50%);
-        width: 80%;
-    }
-
-    /*extrutura dos itens da API*/
-    .swiper-cabecalho {
-        flex-direction: column;
-        gap: 0em;
-    }
-
-    .cabecalho-img {
-        width: 24px;
+    .cabecalho-img{
+        width: 14px;
     }
 
     .cabecalho-titulo {
-        font-size: 0.8rem;
-    }
-
-    .swiper-img {
-        width: 30vw;
-        padding: 0em 0em;
-    }
-
-    .swiper-descricao {
-        background: fixed url(../assets/descrição_bg.png) center center no-repeat;
-        background-size: cover;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    /*extrutras da page*/
-    .projects-arquive {
-        width: 100%;
-        
-    }
-    
-    .swiper-descricao {
-        top: 400px;
-        transform: translateX(-50%);
-        width: 80%;
+        font-size: 0.6rem;
+        font-weight: 600;
     }
 }
 
