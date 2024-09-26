@@ -8,57 +8,148 @@
 }
 
 /*extrutura basica da page*/
-.projects-arquive {
+.Projects {
     width: 100%;
+    height: 1400px;
+    padding-top: 30em;
     font-family: "Orbitron", Arial, Helvetica, sans-serif;
+    font-weight: 600;
     display: flex;
     flex-direction: column;
-    padding: 0.5em 0px;
-    margin: auto;
     text-align: center;
+    background: local url(../assets/background\ projects.png) center center no-repeat;
+    background-size: cover;
+}
+
+.projects-arquive {
+    padding: 0px 1.5em;
+}
+
+/*API*/
+.swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.swiper-cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.swiper-descricao {
+    position: none;
+
+    background: local white url(../assets/descricao-BackGround.png) center top no-repeat;
+    background-size: contain;
+    width: 60%;
+    margin: auto;
+    font-size: 1rem;
+    padding: 2em;
+    margin-top: 10em;
 }
 
 /*obejetos*/
 .projects-titulo {
-    font-family: "Orbitron", Arial, Helvetica, sans-serif;
     font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 1em auto;
+    padding: 2em 0em 1em 0em;
 }
 
-.cabecalho-img{
-    width: 24px;
+.cabecalho-img {
+    width: 42px;
 }
 
-.descricao-background {
-    position: sticky;
-    bottom: 100%;
+.swiper-img {
+    width: 100%;
 }
 
 .descricao-conteudo {
-    font-size: 0.8rem;
+    padding-bottom: 0.5em;
 }
 
-.descricao-link {
-    color: blue;
-    font-size: 0.8rem;
-}
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    .Projects {
+        height: 800px;
+        padding-top: 0em;
+        background-image: none;
+    }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+    .projects-arquive {
+        padding: 0px 50px;
+    }
+
+    /*API*/
+    .swiper-cabecalho {
+        flex-direction: row;
+        gap: 0em;
+        font-size: 1rem;
+    }
+
+    .swiper-descricao {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+
+        transform: translate(-50%, -55%);
+        width: 50%;
+        padding: 1em;
+        margin-top: 10em;
+    }
+
     /*obejetos*/
     .projects-titulo {
-        font-size: 2rem;
+        font-size: 4rem;
+        padding: 2em 0em 1em 0em;
     }
 
-    .cabecalho-img{
-        width: 14px;
+    .cabecalho-img {
+        width: 42px;
+    }  
+}
+
+@media screen and (max-width: 600px) {
+    /*extrutura basica da page*/
+    .Projects {
+        height: 100vh;
+        padding-top: 0em;
+        background-image: none;
     }
 
-    .cabecalho-titulo {
+    .projects-arquive {
+        padding: 0px 15px;
+    }
+
+    /*API*/
+    .swiper-cabecalho {
+        flex-direction: column;
+        gap: 0.3em;
         font-size: 0.6rem;
-        font-weight: 600;
     }
+
+    .swiper-descricao {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+
+        transform: translate(-50%, -60%);
+        width: 80%;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+    /*obejetos*/
+    .projects-titulo {
+        font-size: 3rem;
+        padding: 1em 0em 0.5em 0em;
+    }
+
+    .cabecalho-img {
+        width: 24px;
+    }  
 }
 
 img {

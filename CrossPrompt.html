@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-contexto="Projects"> <!--parece q esse e a chave que faltava no codigo-->
+<html lang="pt-br" data-contexto="Home"> <!--parece q esse e a chave que faltava no codigo-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +45,7 @@
     </header>
 
     <main>
-        <div class="Home pages hidden" id="pageHome">
+        <div class="Home pages " id="pageHome">
             <div class="home-conteudo"></div>
         </div>
 
@@ -68,14 +68,19 @@
                 </p>
 
                 <div class="redes">
-                    <a href="https://github.com/Gabriel-A-B" class="redes-item"><img src="assets/GitHub_01 1.png" alt="icone do github" class="redes-item-img img-github"></a>
-                    <a href="www.linkedin.com/in/gabriel-andrade-branger-690a34230" class="redes-item"><img src="assets/Linkedin_01 1.png" alt="icone do linkedin" class="redes-item-img img-linkedin"></a>
-                    <a href="https://www.instagram.com/techn0_trailblazer?igsh=MW1qMzlibW8xNzJvNw==" class="redes-item"><img src="assets/Instagram_01 1.png" alt="icone do insta" class="redes-item-img img-instagram"></a>
+                    <a href="https://github.com/Gabriel-A-B" 
+                    class="redes-item"><img src="assets/GitHub_01 1.png" alt="icone do github" class="redes-item-img img-github"></a>
+
+                    <a href="https://www.linkedin.com/in/gabriel-andrade-branger-690a34230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                    class="redes-item"><img src="assets/Linkedin_01 1.png" alt="icone do linkedin" class="redes-item-img img-linkedin"></a>
+
+                    <a href="https://www.instagram.com/crosspromptdev?igsh=MW1qMzlibW8xNzJvNw==" 
+                    class="redes-item"><img src="assets/Instagram_01 1.png" alt="icone do insta" class="redes-item-img img-instagram"></a>
                 </div>
             </div>
         </div>
 
-        <div class="Projects pages " id="pageProject">
+        <div class="Projects pages hidden" id="pageProject">
             <h1 class="projects-titulo">Projects</h1>
            
             <!--swiper extrutura-->
@@ -177,25 +182,24 @@
                 </div>
             </div>
             <!--fim da ferramenta-->
+
             <!--aqui e a descrição do sites-->
         <div class="swiper-descricao hidden">
-            <img src="assets/descricao-BackGround.png" alt="" class="descricao-background">
             <p class="descricao-conteudo"></p>
             <a href="" class="descricao-link">Acessar</a>
         </div>
         </div>
 
         <div class="Contacts pages hidden" id="pageContact">
-            <section class="contacts-mobile">
-                <iframe src="mobile/home.html" frameborder="0" id="tela" name="tela" class="mobile-tela"></iframe>
+            <section id="telefone">
+                <iframe src="mobile/home.html" frameborder="0" id="tela" name="tela"></iframe>
             </section>
-
-            <section class="contacts-redes">
-                <a href="mobile/home.html" target="tela" class="redes__page"><img src="assets/botao-home (2).png" alt="home.png" class="redes__page-img"></a>
-                <a href="mobile/instagram.html" target="tela" class="redes__page"><img src="assets/logo-instagram 1.png" alt="instagram.png" class="redes__page-img"></a>
-                <a href="mobile/github.html" target="tela" class="redes__page"><img src="assets/logo-github 1.png" alt="github.png" class="redes__page-img"></a>
-                <a href="mobile/linkedin.html" target="tela" class="redes__page"><img src="assets/linkedin (2).png" alt="linkedin.png" class="redes__page-img"></a>
-            </section>
+            <section id="redes">
+                <a href="mobile/home.html" target="tela"><img src="assets/contacts/logo-home.jpg" alt="logo-home"></a> <br>
+                <a href="mobile/linkedin.html" target="tela"><img src="assets/contacts/linkedin.png" alt="logo-facebook"></a> <br>
+                <a href="mobile/gitHub.html" target="tela"><img src="assets/contacts/logo-github.jpg" alt="logo-github"></a> <br>
+                <a href="mobile/instagram.html" target="tela"><img src="assets/contacts/logo-instagram.jpg" alt="logo-instagram"></a> <br>
+            </section>;
         </div>
 
     </main>

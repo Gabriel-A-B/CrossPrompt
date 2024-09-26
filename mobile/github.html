@@ -15,6 +15,14 @@
             background: #032700;
         }
 
+        .page {
+            width: 100%;
+            height: 1775px;
+
+            background: local url(../assets/contacts/page-notebook/Macbook-Air-github.com.png) center top no-repeat;
+            background-size: cover;
+        }
+
         a {
             display: block;
             background-image: #032700;
@@ -43,10 +51,29 @@
         img {
             width: 100%;
         }
+        @media screen and (max-width: 700px) {
+            .page {
+            width: 100%;
+            height: 826px;
+
+            background: local url(../assets/contacts/page-tablet/Galaxy-Tab-S7-github.com.png) center top no-repeat;
+            background-size: cover;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .page {
+            width: 100%;
+            height: 1775px;
+
+            background: local url(../assets/contacts/page-mobile/github-page.png) center top no-repeat;
+            background-size: cover;
+            }
+        }
     </style>
 </head>
 <body>
-    <img src="../assets/Background-Github.png" alt="Instagram">
+    <div class="page"></div>
     <a href="https://www.github.com/Gabriel-A-B" target="_blank"> ACESSE </a>
 </body>
 </html>

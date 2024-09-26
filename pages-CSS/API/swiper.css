@@ -16,16 +16,13 @@ html,
     }
 
     .swiper {
-      width: 95%;
+      width: 60%;
       position: relative;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      margin-bottom: 4em;
     }
 
     .swiper-slide {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       background-position: center;
       background-size: cover;
@@ -46,22 +43,24 @@ html,
       display: none;
     }
 
-    /*objetos da API*/
-    .swiper-cabecalho {
-      display: flex;
-      justify-content: space-around;
-    }
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .swiper {
+    width: 100%;
+    position: relative;
+  }
 
-    .swiper-descricao {
-      width: 90%;
-      background-color: white;
-      margin: auto;
-      text-align: center;
-      padding: 0px 0em 10px 0em;
-      margin-bottom: 2em;
-    }
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    display: none;
+  }
+}    
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+  .swiper {
+    width: 95%;
+    position: relative;
+  }
+  
   .swiper .swiper-button-next,
   .swiper .swiper-button-prev {
     display: none;

@@ -1,49 +1,152 @@
-@charset "UTF-08";
+@charset "UTF-8";
 
-/*extrutura*/
 .Contacts {
-    display: flex;
-    justify-content: space-around;
-    padding: 2em 0em;
+    height: 700px;
 }
 
-/*objetos*/
-.contacts-mobile {
-    width: 600px;
-    height: 627px;
-    background: local url(../assets/frame-iphone\ 1.png) center center no-repeat;
-    background-size: contain;
-}
-
-.mobile-tela {
+section#telefone{
     position: absolute;
-    top: 14.5em;
-    left: 21em;
-    
-    width: 269px;
-    height: 475px;
-    border-radius: 5px;
+    height: 530px;
+    width: 922px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../assets/contacts/frame-notebook.png) no-repeat ;
 }
 
-.contacts-redes {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+section#redes {
+    width: max-content;
+    position: relative;
+    top: 10em;
+    position: relative;
+    text-align: left;
 }
 
-.redes__page-img {
-    width: 64px;
+section#redes img {
+    height: 50px;
+    width: 50px;
+
+    margin: 10px;
+
+    border-radius: 10%;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.678);
     background-color: white;
-    border-radius: 50%;
-    border: 2px white solid;
+    box-sizing: 5px;
 }
 
-.redes__page-img:hover {
-    transition: 0.5s;
-    border: 2px rgba(0, 255, 255, 0.884) solid;
-    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.884);
+section#redes img:hover {
+    transform: translate(5%, -5%);
+    transition-duration: 1s;
+
+    transition: transform .3s;
 }
 
-img {
-    width: 100%;
+iframe#tela {
+    position: relative;
+    top: 30px;
+    left: 100px;
+
+    height: 446px;
+    width: 720px;
+}
+
+@media screen and (max-width: 1000px) {    
+    section#telefone{
+        height: 589px;
+        width: 384px;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../assets/contacts/frame-tablet.png) no-repeat ;
+    }
+    
+    section#redes {
+        position: relative;
+        top: 10em;
+        position: relative;
+        text-align: right;
+    }
+    
+    section#redes img {
+        height: 50px;
+        width: 50px;
+    
+        margin: 10px;
+    
+        border-radius: 10%;
+        box-shadow: 2px 1px rgba(0, 0, 0, 0.678);
+        background-color: white;
+        box-sizing: 5px;
+    }
+    
+    section#redes img:hover {
+        transform: translate(-5%, -5%);
+        transition-duration: 1s;
+    
+        transition: transform .3s;
+    }
+    
+    iframe#tela {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    
+        border-radius: 5px;
+        height: 550px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Contacts {
+        height: 700px;
+    }
+    
+    section#telefone{
+        position: absolute;
+        height: 637px;
+        width: 311px;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../assets/contacts/frame-iphone.png) no-repeat ;
+    }
+    
+    section#redes {
+        position: relative;
+        top: 10em;
+        position: relative;
+        text-align: right;
+    }
+    
+    section#redes img {
+        height: 50px;
+        width: 50px;
+    
+        margin: 10px;
+    
+        border-radius: 10%;
+        box-shadow: 2px 1px rgba(0, 0, 0, 0.678);
+        background-color: white;
+        box-sizing: 5px;
+    }
+    
+    section#redes img:hover {
+        transform: translate(-5%, -5%);
+        transition-duration: 1s;
+    
+        transition: transform .3s;
+    }
+    
+    iframe#tela {
+        position: relative;
+        top: 84px;
+        left: 26px;
+    
+        height: 464px;
+        width: 260px;
+    }
 }

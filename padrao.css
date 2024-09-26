@@ -27,7 +27,7 @@
 }
 
 [data-contexto="Contacts"] {
-	background: fixed url(assets/fundo-madeira\ 1.png) center center no-repeat;
+	background: fixed url(assets/contacts/fundo-madeira.jpg) center center no-repeat;
 	background-size: cover;
 }
 
@@ -69,7 +69,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	height: 100vh;
+	height: fit-content;
 }
 ol, ul {
 	list-style: none;
