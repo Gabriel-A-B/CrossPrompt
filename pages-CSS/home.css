@@ -1,5 +1,69 @@
 @charset "UTF-08";
 
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/*extrutura*/
 .Home {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     height: 100vh;
+}
+
+.home {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em 2em 0em;
+    gap: 2.5em;
+}
+
+.home-updates {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+/*objetos*/
+.home-titulo {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.updates-titulos {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.updates-text {
+    font-size: 1rem;
+}
+
+.updates-data {
+    color: darkcyan;
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+    .Home {
+        height: max-content;
+    }
+
+    .home {
+        width: 80%;
+    }
+
+    .home-titulo {
+        text-align: left;
+    }
 }
