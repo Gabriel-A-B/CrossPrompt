@@ -117,6 +117,7 @@
         transition: 1s;
         
         box-shadow: 0px 0px 10px aqua;
+        background-color: gray;
         transform: translateY(-0px);
         border-radius: 50%;
         height: fit-content;
