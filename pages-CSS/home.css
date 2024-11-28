@@ -6,18 +6,15 @@
 }
 
 /*extrutura*/
-.Home {
+.home {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     height: 100vh;
-}
-
-.home {
     width: 50%;
     margin: auto;
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding: 2em 0em 2em 0em;
+    padding: 4em 0em 5em 0em;
     gap: 2.5em;
 }
 

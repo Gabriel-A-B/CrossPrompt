@@ -12,21 +12,21 @@
 /*page Contacts*/
 @import url(pages-CSS/contacts.css);
 
-[data-contexto="Home"] {
+[data-contexto="home"] {
 	background: fixed url(assets/background.png) center center no-repeat;
 	background-size: cover;
 }
 
-[data-contexto="About"] {
+[data-contexto="about"] {
 	background: fixed url(assets/Transição_about\ 1.png) center center no-repeat;
 	background-size: cover;
 }
 
-[data-contexto="Projects"] {
+[data-contexto="projects"] {
 	background-color: black;
 }
 
-[data-contexto="Contacts"] {
+[data-contexto="contacts"] {
 	background: fixed url(assets/contacts/fundo-madeira.jpg) center center no-repeat;
 	background-size: cover;
 }
